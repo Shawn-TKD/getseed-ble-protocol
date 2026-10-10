@@ -29,6 +29,26 @@ python tools/getcard.py info                 # 设备时间 / MTU / 可用空间
 
 ---
 
+## 🧩 WorkBuddy / Agent 技能包（`skills/getcard/`）
+
+把"Agent 直读录音卡"封装成了标准 Skill，可直接安装到 WorkBuddy（或任何支持
+SKILL.md 约定的 Agent）：
+
+```
+skills/getcard/
+├── SKILL.md                  ← 触发条件 + 操作流程 + 安全规则 + 故障速查
+├── scripts/getcard.py        ← 蓝牙操作（同 tools/）
+├── scripts/transcribe.py     ← 硅基流动转写 + 摘要（纯标准库）
+└── references/protocol.md    ← 协议参考（按需加载）
+```
+
+安装：把 `skills/getcard/` 复制到 `~/.workbuddy/skills/getcard/`（用户级）。
+之后对 Agent 说"**把录音卡上的录音拉下来转写成文字**"即可自动执行。
+
+安全默认值写进了 SKILL.md：**只读优先**，`delete`/`purge` 必须用户当次明确要求。
+
+---
+
 ## 核心结论（TL;DR）
 
 | # | 结论 |
