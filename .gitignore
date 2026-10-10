@@ -1,0 +1,11 @@
+# 本地分析产物（不入库）
+*.ogg
+*.wav
+*.bin
+*.log
+bugreport/
+recovered/
+agent_pulls/
+shots/
+__pycache__/
+.DS_Store
