@@ -9,3 +9,4 @@ agent_pulls/
 shots/
 __pycache__/
 .DS_Store
+dist/
