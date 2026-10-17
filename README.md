@@ -88,6 +88,7 @@ skills/getcard/
 | 09 | [comparison-anker-d3200](docs/09-comparison-anker-d3200.md) | 与安克 D3200（同为 BES）对比 |
 | 10 | [web-bluetooth-feasibility](docs/10-web-bluetooth-feasibility.md) | 纯网页版可行性（Web Bluetooth）|
 | 11 | [self-app-integration](docs/11-self-app-integration.md) | 自建 App 接入路径 |
+| 13 | [wifi-transfer-analysis](docs/13-wifi-transfer-analysis.md) | **WiFi 快传链路**：MCU2WIFI SPI 桥 + SoftAP + wifi_iot 握手还原 |
 
 ---
 

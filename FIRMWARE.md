@@ -129,7 +129,7 @@ pwrkey_hlw_ui_key_longpress_handle               长按（开机）
 | 能力 | 状态 |
 |---|---|
 | U盘（MSD）模式 | 固件支持 `get/set_msd_mode_status`；默认关闭，需 BLE 命令或按键组合切入 |
-| WiFi 快传 | `*_wifi_status_handle` 一族；录音传输时经 BLE 通知 App WiFi 信息 |
+| WiFi 快传 | `*_wifi_status_handle` 一族；录音传输时经 BLE 通知 App WiFi 信息 —— **完整链路分析见 [docs/13](docs/13-wifi-transfer-analysis.md)**（MCU2WIFI SPI 桥 + SoftAP + App 侧 wifi_iot 握手还原）|
 | 远程录音 | `notify_device_start_or_stop_recode`（命令码未定位）|
 | 删除 / 清空 | 已实测（`0x0044` / `0x0041`）|
 | HID | `send_hid_to_phone`（用途未查明）|
